@@ -5,7 +5,6 @@ class State(IntEnum):
     EXPOSED = 2
     INFECTIOUS = 3
     REMOVED = 4
-    DEAD = 5
 
     def get_values():
         return list(map(int, State))
