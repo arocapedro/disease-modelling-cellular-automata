@@ -7,7 +7,8 @@ Dynamic particles          |  Static particles
 <img src="figures\tp_0.133_match_peak_I.jpg" alt="drawing" width="400" />  |  <img src="figures\tp_0_500_days.jpg" alt="drawing" width="400"/>
 
 
-## Usage 
+## Usage
+An example of all of these steps can be found [here](example_notebook.ipynb).
 * Install requeriments `pip install -r requeriments.txt`
 * Instantiate the `Grid` object:
 ```py
