@@ -1,15 +1,10 @@
 # Cellular Automaton model
 
-<style>
-    img {
-background-color:#ffffff;
-}
-</style>
 
 Dynamic particles          |  Static particles
 :-------------------------:|:-------------------------:
 <img src="figures\example_simulation_dynamic_small.gif" alt="drawing" width="400"/>  |  <img src="figures\example_simulation_static_small.gif" alt="drawing" width="400"/>
-<img src="figures\tp_0.133_match_peak_I.png" alt="drawing" width="400" />  |  <img src="figures\tp_0_500_days.png" alt="drawing" width="400"/>
+<img src="figures\tp_0.133_match_peak_I.jpg" alt="drawing" width="400" />  |  <img src="figures\tp_0_500_days.jpg" alt="drawing" width="400"/>
 
 
 ## Usage 
@@ -55,9 +50,11 @@ plt.close()
 ```
 
 ### Plotting population graphs (SEIR style)
+```py
 color_list = ["blue","red","green","purple"]
 cmap = colors.LinearSegmentedColormap.from_list("", color_list)
 sns.lineplot(data=g.pd_stats,palette=color_list ).set(title = 'CA model', xlabel = 'Days', ylabel = 'Population')
+`` 
 
 ## Parameters
 ### Grid
