@@ -1,4 +1,4 @@
-# Cellular Automaton model
+# Disease modelling using a Cellular Automaton model
 
 
 Dynamic particles          |  Static particles
