@@ -43,6 +43,11 @@ def ode_model(z, t, beta, sigma, gamma, lockdown, start_day, duration_of_lockdow
     :return: array of derivative values [dSdt, dEdt, dIdt, dRdt]
     """ 
     S, E, I, R = z
+    if t > start_day and t < duration_of_lockdown:
+        old_I = I
+        I = 0
+    else:
+        I = old_I
     N = S + E + I + R
     
     if lockdown:
