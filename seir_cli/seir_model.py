@@ -6,11 +6,20 @@ from scipy.integrate import odeint
 import plotly.graph_objects as go
 from datetime import datetime
 
+global old_I
+start_day = 20
+end_day = 45
+
 def ode_model(z, t, beta, sigma, gamma):
     """
     
     """
     S, E, I, R = z
+    if t > start_day and t < end_day:
+        old_I = I
+        I = 0
+    else:
+        I = old_I
     N = S + E + I + R
     dSdt = -beta*S*I/N
     dEdt = beta*S*I/N - sigma*E
