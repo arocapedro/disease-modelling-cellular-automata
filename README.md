@@ -55,7 +55,7 @@ plt.close()
 color_list = ["blue","red","green","purple"]
 cmap = colors.LinearSegmentedColormap.from_list("", color_list)
 sns.lineplot(data=g.pd_stats,palette=color_list ).set(title = 'CA model', xlabel = 'Days', ylabel = 'Population')
-`` 
+```
 
 ## Parameters
 ### Grid
